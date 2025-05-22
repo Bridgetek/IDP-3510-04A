@@ -24,3 +24,4 @@ The **IDP-3510-04A** is a compact and versatile display module designed for intu
   - Built-in **buzzer** for event alerts  
 
 
+The datasheet can be downloaded from : https://brtchip.com/product/idp-3510-04a/
