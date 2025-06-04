@@ -25,3 +25,31 @@ The **IDP-3510-04A** is a compact and versatile display module designed for intu
 
 
 The datasheet can be downloaded from : https://brtchip.com/product/idp-3510-04a/
+
+The built-in example displays Bridgetek logo, scans Wifi networks and shows the connectec Wifi.
+
+### Build and run
+
+#### Install tool:
+ - vscode and ESP-IDF extension
+  
+#### Configure the ESP-IDF extension:
+ - Open the vscode, configure the ESP-IDF by command: "ESP-IDF: Configure ESP-IDF Extension"
+ - The ESP-IDF setup tab will appears, add this setting:
+	  - Select ESP-IDF version: -> v5.4.1 or any other version
+      - Enter ESP-IDF container directory: -> [USER]\esp
+      - Enter ESP-IDF Tools directory (IDF_TOOLS_PATH): ->  -> [USER]\esp\v5.4.1\esp-idf\tools
+
+ - Click "Configure tool" button
+ - Wait for the installer finish
+
+#### Compile the source
+ - Open ESP-IDF Terminal in VScode
+ 
+      > cd examples\wifi_scan
+      > idf.py build
+
+#### Flash the binary file
+ - Connect the Micro-USB cable to your PC, then open Device Manager and check under "Porrts (COM & LPT)" to identify the assigned COM port number (e.g., COM3).
+
+      > ipf.py -p COM3 flash
