@@ -26,7 +26,7 @@ The **IDP-3510-04A** is a compact and versatile display module designed for intu
 
 The datasheet can be downloaded from : https://brtchip.com/product/idp-3510-04a/
 
-The built-in example displays Bridgetek logo, scans Wifi networks and shows the connectec Wifi.
+The built-in example displays Bridgetek logo, scans Wifi networks and shows the connected Wifi.
 
 ### Build and run
 
