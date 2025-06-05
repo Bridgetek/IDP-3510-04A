@@ -45,11 +45,16 @@ The built-in example displays Bridgetek logo, scans Wifi networks and shows the 
 
 #### Compile the source
  - Open ESP-IDF Terminal in VScode
- 
-      > cd examples\wifi_scan
-      > idf.py build
-
+``` 
+      $ cd examples\wifi_scan
+      $ idf.py build
+```
 #### Flash the binary file
  - Connect the Micro-USB cable to your PC, then open Device Manager and check under "Porrts (COM & LPT)" to identify the assigned COM port number (e.g., COM3).
-
-      > ipf.py -p COM3 flash
+```
+      $ ipf.py -p COM3 flash
+```
+Example binary files are under examples/wifi_scan/example_binary. Users can use the following command to flash:
+```
+  $ esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x1000 bootloader.bin 0x10000 wifi_scan.bin 0x8000 partition-table.bin 0x110000 storage.bin
+```  
